@@ -40,7 +40,7 @@ namespace ProjekatFakultet.Controllers
         public List<ProfesoriModel> GetProfesoriPlate()
         {
             var lista = from profesor in _context.Profesori
-                        where profesor.Plata >= 2000
+                        where profesor.Plata >= 1900
                         select profesor;
 
             return lista.ToList();
